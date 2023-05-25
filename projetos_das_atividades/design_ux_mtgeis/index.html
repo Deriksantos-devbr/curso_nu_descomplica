@@ -6,44 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Projeto-nu</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Site de Saúde</h1>
-    <nav>
-      <ul>
-        <li><a href="#saude">Saúde</a></li>
-        <li><a href="#alimentacao">Alimentação</a></li>
-        <li><a href="#exercicios">Exercícios</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blog de Saúde e Boa Alimentação</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Receitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <!-- Seção de Saúde -->
-  <section id="saude">
-    <h2>Dicas de Saúde</h2>
-    <p>Aqui você encontra informações sobre bem-estar geral e prevenção de doenças.</p>
-    <!-- Conteúdo relacionado à saúde -->
-  </section>
+  <main class="container">
+    <section>
+      <h1>Bem-vindo ao Blog de Saúde e Boa Alimentação!</h1>
+      <p>Aqui você encontrará dicas, receitas e informações para uma vida saudável e equilibrada.</p>
+    </section>
 
-  <!-- Seção de Alimentação -->
-  <section id="alimentacao">
-    <h2>Alimentação Saudável</h2>
-    <p>Confira dicas nutricionais, benefícios de uma dieta equilibrada e receitas saudáveis.</p>
-    <!-- Conteúdo relacionado à alimentação -->
-  </section>
+    <section>
+      <h2>Receitas Recentes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="caminho-da-imagem.jpg" class="card-img-top" alt="Imagem da Receita">
+            <div class="card-body">
+              <h5 class="card-title">Nome da Receita 1</h5>
+              <p class="card-text">Descrição da receita 1.</p>
+              <a href="#" class="btn btn-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="caminho-da-imagem.jpg" class="card-img-top" alt="Imagem da Receita">
+            <div class="card-body">
+              <h5 class="card-title">Nome da Receita 2</h5>
+              <p class="card-text">Descrição da receita 2.</p>
+              <a href="#" class="btn btn-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="caminho-da-imagem.jpg" class="card-img-top" alt="Imagem da Receita">
+            <div class="card-body">
+              <h5 class="card-title">Nome da Receita 3</h5>
+              <p class="card-text">Descrição da receita 3.</p>
+              <a href="#" class="btn btn-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Seção de Exercícios -->
-  <section id="exercicios">
-    <h2>Exercícios Físicos</h2>
-    <p>Descubra diferentes tipos de atividades físicas e orientações para uma rotina de exercícios.</p>
-    <!-- Conteúdo relacionado aos exercícios -->
-  </section>
+    <section>
+      <h2>Dicas de Alimentação</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Dica</th>
+            <th scope="col">Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Dica de alimentação 1.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Dica de alimentação 2.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>Todos os direitos reservados. &copy; 2023</p>
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+      <p>Todos os direitos reservados &copy; 2023 Blog de Saúde e Boa Alimentação</p>
+    </div>
   </footer>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
 </html>
