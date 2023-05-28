@@ -1,41 +1,62 @@
 @charset "UTF-8";
 
-/* styles.css */
 
-/* Estilo global */
+:root{
+  --cor-0:#FFFFFF;
+  --cor-1:#98D9A7;
+  --cor-2:#52B788;
+  --cor-3:#88E3B5;
+  --cor-4:#AED9E0;
+  --cor--5:#79C0CA;
+  --cor-6:#F7EFC6;
+  --cor-7:#FDE3A7;
+  --cor-8:#EDEDED;
+  --cor-9:#A8A8A8;
+  --cor-10:#444444;
+  
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
   
   /* Estilo do cabeçalho */
-  header {
-    background-color: #333;
+header {
+  
     color: #fff;
     padding: 20px;
-  }
+}
+header {
+    background-color: var(--cor-3);
+}
+.carousel-caption h5{
+    font-size: 65px;
+    color: var(--cor-3);
+    text-shadow: 2px 2px 2ox black;
+}
+.card-body h3{
+    font-size: 2em;
+}
+.carousel-item img{
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+
   
   h1 {
     margin: 0;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+
   
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
+
   
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+
   /* Estilo das seções */
   section {
     padding: 20px;
@@ -45,10 +66,10 @@ body {
     margin-top: 0;
   }
   
-  /* Estilo do rodapé */
+
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor-9);
+    color:var(--cor-10);
     padding: 20px;
     text-align: center;
   }
