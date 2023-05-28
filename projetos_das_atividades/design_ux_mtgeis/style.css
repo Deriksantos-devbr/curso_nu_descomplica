@@ -27,23 +27,56 @@ header {
     color: #fff;
     padding: 20px;
 }
-header {
-    background-color: var(--cor-3);
+#nav-bar{
+  background-image: url(imagens/istockphoto-854725372-1024x1024.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-bottom: 5px;
+  
 }
+#header{
+  background-color: var(--cor-3);
+  margin: -10px;
+}
+
+#carouselExampleCaptions {
+  margin-bottom: -9px;
+  background-image: url(imagens/istockphoto-1083436960-170667a.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 0px;
+}
+
+
+
+
+
 .carousel-caption h5{
-    font-size: 65px;
+  margin-bottom: 0;
+ 
+
+
+    font-size: 60px;
     color: var(--cor-3);
     text-shadow: 2px 2px 2ox black;
 }
 .card-body h3{
     font-size: 2em;
 }
-.carousel-item img{
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
+
+
+.carousel-inner {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  left: 15%;
+  
+ 
+
 }
 
 
