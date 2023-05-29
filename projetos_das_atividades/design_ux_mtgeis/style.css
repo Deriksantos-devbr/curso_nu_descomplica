@@ -25,10 +25,10 @@ body {
 header {
   
     color: #fff;
-    padding: 20px;
+    padding: 2px;
 }
 #nav-bar{
-  background-image: url(imagens/istockphoto-854725372-1024x1024.jpg);
+  background-image: linear-gradient to top(var(--cor-2), var(--cor-4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
