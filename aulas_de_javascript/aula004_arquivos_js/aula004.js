@@ -12,3 +12,13 @@ console.log(nomePessoa)
      var3 = 3;
      
      console.log(var2)
+
+     var variavel1;
+     variavel1 = 25;
+
+let book = 10;
+    console.log(book)
+
+const valor1 = 100;
+
+     console.log(valor1);
