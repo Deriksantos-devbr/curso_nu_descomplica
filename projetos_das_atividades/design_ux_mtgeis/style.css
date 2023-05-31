@@ -7,16 +7,17 @@
   --cor-2:#52B788;
   --cor-3:#88E3B5;
   --cor-4:#AED9E0;
-  --cor--5:#79C0CA;
+  --cor-5:#6b8a48;
   --cor-6:#F7EFC6;
   --cor-7:#FDE3A7;
   --cor-8:#EDEDED;
   --cor-9:#A8A8A8;
   --cor-10:#444444;
+  --cor-11:#829161;
   
 }
 body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
 }
@@ -27,8 +28,12 @@ header {
     color: #fff;
     padding: 2px;
 }
+#logo_header{
+  
+  padding-left: 2%;
+}
 #nav-bar{
-  background-image: linear-gradient to top(var(--cor-2), var(--cor-4));
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,11 +42,12 @@ header {
   
 }
 #header{
-  background-color: var(--cor-3);
-  margin: -10px;
+  background-color: var(--cor-11);
+  margin: -15px;
 }
 
 #carouselExampleCaptions {
+  box-shadow: 2px 2px 6px  black;
   margin-bottom: -9px;
   background-image: url(imagens/background_img/e238ea01c29bbffe51d54d7f93877dff.jpg);
   background-repeat: no-repeat;
@@ -52,7 +58,11 @@ header {
 }
 
 
-
+#carosel_fonte{
+  color: var(--cor-0);
+  text-shadow: 1px 1px  black;
+  
+}
 
 
 .carousel-caption h5{
@@ -71,18 +81,29 @@ header {
 
 .carousel-inner {
   position: relative;
-  width: 70%;
+  width:80%;
   overflow: hidden;
-  left: 15%;
+  left: 10%;
   
  
 
 }
+main{
+  background-image: linear-gradient(var(--cor-11), var(--cor-2));
+}
 
 
   
-  h1 {
+#h1_titulo_principal {
+  
+
+  
+  text-decoration: none;
+  text-align: center;
+  text-shadow:  0.2px 0.1px 0px black;
     margin: 0;
+    padding-top: 17px;
+    color: rgb(0, 31, 27);
   }
   
 
