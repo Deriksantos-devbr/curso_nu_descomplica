@@ -5,7 +5,7 @@
   --cor-0:#FFFFFF;
   --cor-1:#98D9A7;
   --cor-2:#52B788;
-  --cor-3:#88E3B5;
+  --cor-3:#9adfbc;
   --cor-4:#AED9E0;
   --cor-5:#6b8a48;
   --cor-6:#F7EFC6;
@@ -29,27 +29,32 @@ header {
     padding: 2px;
 }
 #logo_header{
+  color: var(--cor-3);
   
   padding-left: 2%;
 }
 #nav-bar{
+  
+  background-image: linear-gradient( to right,#1e5799 30% , #A8A40E );
+
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 11px;
   
 }
 #header{
-  background-color: var(--cor-11);
+
   margin: -15px;
 }
 
 #carouselExampleCaptions {
   box-shadow: 2px 2px 6px  black;
   margin-bottom: -9px;
-  background-image: url(imagens/background_img/e238ea01c29bbffe51d54d7f93877dff.jpg);
+  background-image: url(imagens/background_img/20441cd20517710fc2d077669c4819bf.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,11 +64,13 @@ header {
 
 
 #carosel_fonte{
-  color: var(--cor-0);
+  color:  #1e5799 ;
   text-shadow: 1px 1px  black;
   
 }
-
+#imagem_carosel{
+border-radius: 5px;
+}
 
 .carousel-caption h5{
   margin-bottom: 0;
