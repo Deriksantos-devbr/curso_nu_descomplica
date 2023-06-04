@@ -2,18 +2,7 @@
 
 
 :root{
-  --cor-0:#FFFFFF;
-  --cor-1:#98D9A7;
-  --cor-2:#52B788;
-  --cor-3:#9adfbc;
-  --cor-4:#AED9E0;
-  --cor-5:#6b8a48;
-  --cor-6:#F7EFC6;
-  --cor-7:#FDE3A7;
-  --cor-8:#EDEDED;
-  --cor-9:#A8A8A8;
-  --cor-10:#444444;
-  --cor-11:#829161;
+
   
 }
 body {
@@ -36,7 +25,7 @@ header {
 }
 #nav-bar{
   
-  background-image: linear-gradient( to right,#1e5799 30% , #095C30 );
+  background-image: linear-gradient( to right,#252525 30% , #3d3d1f);
   
 
 
