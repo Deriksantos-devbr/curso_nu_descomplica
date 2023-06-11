@@ -1,0 +1,38 @@
+
+//strings e seus metodos 
+var nome = "Derik da silva"
+var x = nome.length;
+
+console.log(x)
+
+resultado = x > 10 ? "Obrigado" : "Por favor escreva seu nome completo";
+
+console.log(resultado);
+
+var res = nome.toLocaleUpperCase();
+console.log(res);
+
+var res = nome.toLocaleLowerCase();
+console.log(res);
+
+var jogo = "Barcelona x Real melhor time"
+var posicao = jogo.indexOf("Real")
+console.log(posicao);
+
+var cortado = jogo.slice(12,);
+console.log(cortado);
+
+var val = jogo.includes("Real");
+console.log(val);
+
+var str1 = "Hello";
+var str2 = "turma";
+
+var str3 = str1.concat(str2);
+console.log(str3);
+var frase = "     Olá voce esta aprendendo JS     " 
+console.log(frase.trim());
+
+var num = "0,1,2,3,4,5,6,7,8";
+var arr = num.split(",");
+console.log(arr)
