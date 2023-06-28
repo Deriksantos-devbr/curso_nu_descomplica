@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Dom seletor CSS</title>
+</head>
+<body>
+    <span id="novospan" class="novo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni officia excepturi qui quo iste.</p>
+    </span>
+
+    <div class="mensagem">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, molestias quisquam tempora, aliquid placeat minima blanditiis.</h3>
+    </div>
+      
+</body>
+
+<script>
+    elementoSpamClass = document.querySelector("#novospan");
+    elementoSpamClass.style.color = "blue";
+
+    elementoSeletor = document.querySelectorAll(".mensagem")[1];
+    elementoSeletor.innerHTML = "<h2>Substitui o h3 pelo h2</h2>";
+    elementoSeletor.style.color = "black";
+</script>
+</html>

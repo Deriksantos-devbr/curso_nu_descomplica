@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemento DOM exemplo 5</title>
+    <title>Elemento DOM exemplo 4</title>
 </head>
 <body>
     <h1>Usando seletor do DOM</h1>
@@ -12,7 +12,15 @@
         <li>Python</li>
         <li>Nodejs</li>
     </ul>
-    <div id="conteudo" class="mensagem">
+    <div id="conteudo" name="divConteudo"  class="mensagem">
+
+    </div>
+
+    <div name="divConteudo" class="mensagem">
+
+    </div>
+
+    <div name="divConteudo" class="mensagem" >
 
     </div>
 </body>
@@ -24,10 +32,25 @@
     elemento1.style.background = 'red' 
 
     elemento2 = document.getElementsByTagName('li')[2];
-    elemento2.innerText = "pringBoot"
+    elemento2.innerText = "prigBoot"
 
     elementoDiv = document.getElementById("conteudo");
     elementoDiv.innerHTML = "<p> Estou colocando a tag p dentro da div <p>"
+    elementoDiv.style.color = "green"
+
+    elementoDivName = document.getElementsByName("divConteudo")[1];
+    elementoDivName.style.color = "blue"
+    elementoDivName.innerText = " Estou colocando um texto" 
+
+
+    elementoDivClass = document.getElementsByClassName("mensagem")[2];
+    elementoDivClass.style.background = "black"
+    elementoDivClass.style.color = "white"
+    elementoDivClass.innerHTML = "<p> Estou colocando a tag p dentro da div 2 <p>"
+
+
+        
+
 
 </SCript>
 </html>
