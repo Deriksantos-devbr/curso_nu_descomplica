@@ -7,7 +7,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.assento {
+ 
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.fileira {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  text-align: center;
+}
+.assento:nth-child(2){
+  margin-right: 20px;
+}
+.assento:disabled{
+  background-color: #999;
+  color: #ccc;
+  cursor:not-allowed;
 }

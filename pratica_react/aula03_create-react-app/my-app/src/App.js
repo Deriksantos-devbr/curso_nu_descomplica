@@ -1,6 +1,7 @@
 import React from 'react';
 import Voos from './voos';
 import { AssentosOnibus } from './AssentosOnibus';
+import {ViaCep} from './ViaCEP';
 
 const Titulo = () => (
   <h2>
@@ -72,6 +73,7 @@ function App() {
   return (
     <div className="App">
       <Titulo />
+      <ViaCep/>
       <AssentosOnibus />
       <MeuBotao label={`${labelBotao}!!!`} idade={30} />
       <Voos />
