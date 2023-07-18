@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import Voos from './voos';
 import { AssentosOnibus } from './AssentosOnibus';
 import {ViaCep} from './ViaCEP';
+import { RenderProps } from './RenderProps';
+import { Fonts } from './fonts';
 
 const Titulo = () => (
   <h2>
@@ -68,26 +70,35 @@ const Lista = () => {
   );
 };
 
+export const ThemeContext = createContext({});
+
+  
+
 function App() {
+  const  [ font, setFont ] = useState('arial');
   const labelBotao = 'Entre por aqui';
   return (
-    <div className="App">
-      <Titulo />
-      <ViaCep/>
-      <AssentosOnibus />
-      <MeuBotao label={`${labelBotao}!!!`} idade={30} />
-      <Voos />
-      <Lista />
-      <Pessoa idade={19} />
-      <Pessoa idade={14} />
-      <Pessoa idade={54} />
-      <Pessoa idade={11} />
-      <Pessoa idade={8} />
-      <article>
+      <ThemeContext.Provider value={{color: 'blue', font, setFont}}>
+      <div className="App">
+        <Titulo />
+        <RenderProps/>
+        <Fonts/>
+        <ViaCep/>
+        <AssentosOnibus />
+        <MeuBotao label={`${labelBotao}!!!`} idade={30} />
+        <Voos />
+      { /* <Lista />
+        <Pessoa idade={19} />
+        <Pessoa idade={14} />
+        <Pessoa idade={54} />
+        <Pessoa idade={11} />
+        <Pessoa idade={8} />
+        <article>
         <h2>SubTitulo</h2>
         <p>Frasse de exemplo</p>
-      </article>
-    </div>
+        </article>*/}
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

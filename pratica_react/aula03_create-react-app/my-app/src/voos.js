@@ -1,5 +1,5 @@
-import React from "react";
-
+import {useContext} from 'react';
+import { ThemeContext } from './App';
 const voosDisponiveis = [
   {
     id: '123',
@@ -47,26 +47,40 @@ const voosDisponiveis = [
   }
 ];
 
-function Itemvoo(props) {
+function ItemvooDetails({ details }) {
+  const value = useContext(ThemeContext);
   return (
-    <div className="voo">
+    
+    <ul>
+      {details.map(detail => (
+        <li key={detail.id} style={{color: value.color, fontFamily: value.font}}>{detail.title}</li>
+      ))}
+    </ul>
+
+  )
+}
+
+
+function Itemvoo({ title, children }) {
+  return (
+    <div className='voo'>
       <header>
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
       </header>
-      <ul>
-        {props.details.map((detail) => (
-          <li key={detail.id}>{detail.title}</li>
-        ))}
-      </ul>
+      <div className='voo-details'>
+        {children}
+      </div>
     </div>
-  );
+  )
 }
 
 function Voos() {
   return (
     <div className="voos">
-      {voosDisponiveis.map((voo) => (
-        <Itemvoo key={voo.id} title={voo.title} details={voo.details} />
+      {voosDisponiveis.map(voo => (
+        <Itemvoo key={voo.id} title={voo.title}>
+          <ItemvooDetails details={voo.details} />
+        </Itemvoo>
       ))}
     </div>
   );

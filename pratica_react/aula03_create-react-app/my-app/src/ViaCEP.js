@@ -16,8 +16,9 @@ export const ViaCep = () => {
               <td>Complemento:</td>
               <td>{endereco.complemento}</td>
             </tr>
-
-       VC LDXÇ ,V              <td>UF:</td>
+            <tr>
+              
+            <td>UF:</td>
               <td>{endereco.uf}</td>
             </tr>
             
