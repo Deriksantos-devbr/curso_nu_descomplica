@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext} from 'react';
 import Voos from './voos';
 import { AssentosOnibus } from './AssentosOnibus';
 import {ViaCep} from './ViaCEP';
@@ -71,6 +71,8 @@ const Lista = () => {
 };
 
 export const ThemeContext = createContext({});
+
+export const useThemeContext = () => useContext(ThemeContext);
 
   
 

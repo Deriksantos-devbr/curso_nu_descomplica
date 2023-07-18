@@ -1,5 +1,4 @@
-import {useContext} from 'react';
-import { ThemeContext } from './App';
+import { useThemeContext } from './App';
 const voosDisponiveis = [
   {
     id: '123',
@@ -48,7 +47,7 @@ const voosDisponiveis = [
 ];
 
 function ItemvooDetails({ details }) {
-  const value = useContext(ThemeContext);
+  const value = useThemeContext();
   return (
     
     <ul>
