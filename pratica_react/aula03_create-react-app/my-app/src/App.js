@@ -4,6 +4,7 @@ import { AssentosOnibus } from './AssentosOnibus';
 import {ViaCep} from './ViaCEP';
 import { RenderProps } from './RenderProps';
 import { Fonts } from './fonts';
+import {Formulario } from './Formulario';
 
 const Titulo = () => (
   <h2>
@@ -74,15 +75,19 @@ export const ThemeContext = createContext({});
 
 export const useThemeContext = () => useContext(ThemeContext);
 
-  
+const SettingsContext = createContext({});
+
+export const useSettingsContext = () => useContext(SettingsContext);
 
 function App() {
   const  [ font, setFont ] = useState('arial');
   const labelBotao = 'Entre por aqui';
   return (
+    <SettingsContext.Provider value={{cepUrlBase: 'https://viacep.com.br'}}>
       <ThemeContext.Provider value={{color: 'blue', font, setFont}}>
       <div className="App">
         <Titulo />
+        <Formulario/>
         <RenderProps/>
         <Fonts/>
         <ViaCep/>
@@ -101,6 +106,7 @@ function App() {
         </article>*/}
       </div>
     </ThemeContext.Provider>
+    </SettingsContext.Provider>
   );
 }
 
