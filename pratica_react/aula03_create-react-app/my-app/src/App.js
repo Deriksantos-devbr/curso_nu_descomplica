@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext} from 'react';
 import Voos from './voos';
-import { AssentosOnibus } from './AssentosOnibus';
+import { AssentosOnibus } from './AssentosOnibusReducer';
 import {ViaCep} from './ViaCEP';
 import { RenderProps } from './RenderProps';
 import { Fonts } from './fonts';
